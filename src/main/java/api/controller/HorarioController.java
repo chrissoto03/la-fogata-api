@@ -27,7 +27,7 @@ public class HorarioController {
         return horarioService.listar();
     }
 
-    @PutMapping("/horario/{id}")
+    @PutMapping("/admin/horario/{id}")
     public Horario actualizarHorario(@PathVariable Long id,
                                      @RequestBody HorarioRequest request) {
         return horarioService.actualizar(id, request);
