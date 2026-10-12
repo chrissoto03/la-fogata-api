@@ -21,12 +21,12 @@ public class DataInitializer implements CommandLineRunner {
         if (horarioRepository.count() == 0) {
             horarioRepository.saveAll(List.of(
                 new Horario("Lunes", null, null, true),
-                new Horario("Martes", "12:00", "10:00", false),
-                new Horario("Miércoles", "12:00", "10:00", false),
-                new Horario("Jueves", "12:00", "10:00", false),
-                new Horario("Viernes", "11:00", "10:00", false),
-                new Horario("Sábado", "11:00", "10:00", false),
-                new Horario("Domingo", "11:00", "10:00", false)
+                new Horario("Martes", "12:00", "22:00", false),
+                new Horario("Miércoles", "12:00", "22:00", false),
+                new Horario("Jueves", "12:00", "22:00", false),
+                new Horario("Viernes", "11:00", "22:00", false),
+                new Horario("Sábado", "11:00", "22:00", false),
+                new Horario("Domingo", "11:00", "22:00", false)
             ));
         }
     }
